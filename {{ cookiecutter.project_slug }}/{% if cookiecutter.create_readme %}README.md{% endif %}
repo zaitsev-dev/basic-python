@@ -12,13 +12,18 @@ poetry install --with dev
 pre-commit install
 ```
 {% endif %}
+- Run the application:
+```sh
+python src/app.py
+```
 
 
+{% if cookiecutter.}
 ## Run via Docker
 
 - Build an image:
 ```sh
-docker build -t {{cookiecutter.project_slug}}
+docker build -t {{cookiecutter.project_slug}} .
 ```
 - Run a container from your image:
 ```sh
