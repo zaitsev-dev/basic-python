@@ -5,7 +5,7 @@
 - Install Cookicutter
 - Install tepmlate via Cookiecutter:
 ```sh
-cookiecutter gh:dev-zaitsev/basic-python
+cookiecutter https://github.com/zaitsev-dev/basic-python
 ```
 - Answer the questions in the CLI
 - Well done!
