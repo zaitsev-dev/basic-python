@@ -14,7 +14,7 @@ pre-commit install
 {% endif %}
 
 
-## Application run from Dockerfile
+## Run via Docker
 
 - Build an image:
 ```sh
