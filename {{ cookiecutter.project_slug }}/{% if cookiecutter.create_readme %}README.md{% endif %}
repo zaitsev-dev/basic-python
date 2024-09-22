@@ -18,7 +18,7 @@ python src/app.py
 ```
 
 
-{% if cookiecutter.}
+{% if cookiecutter.create_dockerfile}
 ## Run via Docker
 
 - Build an image:
@@ -29,3 +29,4 @@ docker build -t {{cookiecutter.project_slug}} .
 ```sh
 docker run -d -p 3000:3000 {{cookiecutter.project_slug}}
 ```
+{% endif %}
