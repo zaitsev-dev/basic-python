@@ -1,0 +1,26 @@
+# {{cookiecutter.project_name}}
+
+## Installation
+
+- Install the dependendencies via Poetry:
+```sh
+poetry install --with dev
+```
+{% if cookiecutter.pre-commit %}
+- Install the pre-commit hooks:
+```sh
+pre-commit install
+```
+{% endif %}
+
+
+## Application run from Dockerfile
+
+- Build an image:
+```sh
+docker build -t {{cookiecutter.project_slug}}
+```
+- Run a container from your image:
+```sh
+docker run -d -p 3000:3000 {{cookiecutter.project_slug}}
+```
