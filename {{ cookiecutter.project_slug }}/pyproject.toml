@@ -4,14 +4,14 @@ version = "0.1.0"
 description = "{{ cookiecutter.description }}"
 authors = ["{{ cookiecutter.author }}"]
 readme = "README.md"
-{% if not cookicutter.package_mode %}package-mode = false{% endif %}
+{% if not cookiecutter.package_mode %}package-mode = false{% endif %}
 
 [tool.poetry.dependencies]
 python = "{{ cookiecutter.py_version }}"
 
 [tool.poetry.group.dev.dependencies]
-{% if cookicutter.use_ruff %}ruff = "*" {% endif %}
-{% if cookicutter.use_precommit %}pre-commit = "*"{% endif %}
+{% if cookiecutter.use_ruff %}ruff = "*" {% endif %}
+{% if cookiecutter.use_precommit %}pre-commit = "*"{% endif %}
 
 
 {% if cookiecutter.use_ruff %}
@@ -32,7 +32,7 @@ extend-fixable = ["I"]
 ignore = ["D104", "D100", "D105", "B008", "D107", "D415"]
 {% endif %}
 
-{% if cookicutter.package_mode %}
+{% if cookiecutter.package_mode %}
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
