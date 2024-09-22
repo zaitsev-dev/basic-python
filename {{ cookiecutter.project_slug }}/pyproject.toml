@@ -10,9 +10,9 @@ readme = "README.md"
 python = "{{ cookiecutter.py_version }}"
 
 [tool.poetry.group.dev.dependencies]
-{% if cookiecutter.use_ruff %}ruff = "*" {% endif %}
+{% if cookiecutter.use_ruff %}ruff = "*"{% endif %}
 {% if cookiecutter.use_precommit %}pre-commit = "*"{% endif %}
-
+{% if cookiecutter.use_pytest %}pytest = "*"{% endif %}
 
 {% if cookiecutter.use_ruff %}
 [tool.ruff]

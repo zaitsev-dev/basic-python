@@ -4,10 +4,11 @@
   "author": "Vitaliy Zaitsev <dev.zaitsev@gmail.com>",
   "description": "",
   "py_version": "^3.12",
-  "create_readme": true,
+  "package_mode": false,
   "use_ruff": true,
   "use_precommit": true,
-  "package_mode": false,
   "use_dotenv": true,
+  "use_pytest": true,
+  "create_readme": true,
   "create_dockerfile": true
 }

@@ -12,6 +12,12 @@ poetry install --with dev
 pre-commit install
 ```
 {% endif %}
+{% if cookiecutter.use_pytest %}
+- Run tests:
+```sh
+pytest
+```
+{% endif %}
 - Run the application:
 ```sh
 python src/app.py
