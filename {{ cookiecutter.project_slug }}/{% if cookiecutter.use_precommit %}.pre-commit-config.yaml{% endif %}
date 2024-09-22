@@ -14,7 +14,7 @@ repos:
         -   id: poetry-lock
   - repo: local
     hooks:
-{% if cookicutter.use_ruff %}
+{% if cookiecutter.use_ruff %}
       - id: ruff-format
         name: ruff-format
         entry: ruff format
