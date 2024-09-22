@@ -6,7 +6,7 @@
 ```sh
 poetry install --with dev
 ```
-{% if cookiecutter.pre-commit %}
+{% if cookiecutter.pre_commit %}
 - Install the pre-commit hooks:
 ```sh
 pre-commit install
